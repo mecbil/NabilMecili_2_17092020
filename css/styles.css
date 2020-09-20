@@ -1,31 +1,31 @@
-.container {
-    width: 780px;
+ /* Police importée ----------------------------------------------- */
+ @font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+/* ---------------------------------------------------------------- */
+
+/* General -------------------------------------------------------- */
+body{
+    width: 800px;
     margin: auto;
-    font-family: 'Century Gothic', calibri, tahoma, sans-serif;
-    font-size: 16px;
-    /* display: block; */
-    color: #fff;
-    background: #000;
-     
+    padding-left: 10px;
+}
+h2{
+    /*width: 300px; pour iphone */
+    
+    word-wrap: break-word;
+    font-weight: bold;
+}
+p{
+    
+    font-weight: lighter;
+    font-size: 12px;  
 }
 
-.header, .footer, .nav-bar{
-    flex-basis: 100%; 
-    
-}
-.section{
-    display: flex;
-    flex-wrap: wrap;
-    
-       
-}
-.S1{
-    flex-basis: 80%;
-}
-.S2{
-    flex-basis: 20%;
-    flex-wrap: wrap;
-}
-.S3{
-    flex-basis: 100%;
-}
+/* ---------------------------------------------------------------- */
+
+/* header --------------------------------------------------------- */
