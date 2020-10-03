@@ -5,13 +5,18 @@
 /* General -------------------------------------------------------- */
 body{
     box-sizing: border-box;
-    width: 1090px;
+    width: 1140px;
     margin: auto;
     box-sizing: border-box;
     font-family: 'raleway'; 
     font-size: 62.5%;
     
-    
+}
+span{
+    font-weight: 600;
+}
+i{
+    color: #0065FC;
 }
 /* .clearfix::after {
     clear: both;content: ".";
@@ -25,7 +30,7 @@ h1{
     padding-bottom: 0;
     margin-bottom: 5px;  
 } 
-h2{
+h2,h4{
     font-size: 1.1rem;
     padding-left: 10px;
 }
@@ -37,7 +42,7 @@ p{
 a{
     margin:0;
     text-decoration: none;
-    padding : 0 20px;
+    
     color: black;
     font-size: 0.8rem;
 }
@@ -46,9 +51,9 @@ a:visited{color: black;}
 article{
     background-color: white;
     border-radius: 20px;
-    margin: 15px;
+    margin-left: 0px;
     padding: 5px;
-    width: 310px;
+    box-shadow: 1px 2px 8px #F2F2F2;
 
 }
 img{
@@ -56,6 +61,7 @@ img{
     border-radius: 10px 10px 0 0;
     
 }
+
 /* ---------------------------------------------------------------- */
 
 /* header */
@@ -73,7 +79,7 @@ header nav li{
     list-style: none;
     align-items: flex-end;     
    } 
-   header img {
+header img {
        width: 8%;
    }
 /* --------------------------------------------------------------- */
@@ -81,74 +87,142 @@ header nav li{
 /* main */
 main{
     display: flex;
-    flex-wrap: wrap;  
-}
-
-form{
-    order: 1;
-}
-
-.activites{
-    display: flex;
-    flex-wrap: wrap;
-    order: 4;
+    flex-wrap: wrap; 
+    margin-left: 30px;
 }
 
 /* form */
-
+form{
+    order: 1;
+}
 /* --------------------------------------------------------------- */
 
 /* hebergement */
 
 .hebergement{
     display: flex; 
-    background-color: #F2F2F2 ;
     flex-wrap: wrap;
+    background-color: #F2F2F2 ;
     width: 665px;
     border-radius: 20px;
     padding: 10px 20px;
     margin-right: 30px;
     order: 2;
+    justify-content: space-around;
+   
+}
+
+.hebergement h2,h4{
+    width: 660px; 
+    padding-left: 10px;
+}
+.hebergement h4{
+    width: 660px; 
+    font-size: 1rem;
+    padding-left: 10px;
 }
 
 .hebcard{
     
-    max-width: 180px;
+    margin: 10px 0 ;
+    width: 180px;
     
 }
+.hebergement img{
+    height: 100px;
+}
+
+.hebergement h3{
+    margin-top: 5px; 
+    margin-bottom: 0;   
+} 
+.hebergement p{
+    margin-top: 5px; 
+    margin-bottom: 5px;   
+} 
 /* populaire */
 aside{
     background-color: #F2F2F2 ;
-    display: flex;
-    max-width: 335px;
-    padding: 10px -10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 310px;
+    padding-left: 30px;
+    border-radius: 20px;
     order: 3;
-    
+    padding-top: 10px;
 }
 aside article{
-    /* display: flex; */
-    max-width: 330px;
-    
-    
+    display: flex;
+    width: 255px;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 aside img{
-    /* max-width: 150px;
-    max-height: 150px; */
+    /* object-fit: contain; */
+    width: 100px;
+    height: 100px; 
     border-radius: 10px 0 0 10px;
+    padding-right: 10px; 
+    /* align-self: flex-start;   */
 }
-
+aside h2{
+    padding-left: 0;
+}
+aside h2 i{
+    color: black;
+    margin-left: 90px;
+}
+aside h3{
+    margin-top: 5px; 
+    margin-bottom: 0;   
+} 
+ aside p{
+    margin-top: 5px;
+    padding-bottom: 15px;
+}  
 
 /* activites */
 .activites{
-    max-width: 100%;
+   
+    width: 1080px; 
+    display: flex;
+    flex-wrap: wrap;
+    order: 4;
+    justify-content: space-around;
+    
+    
 } 
+.activites article{
+    width: 244px;
+    margin: 0 1px 20px 0;
+    padding: 0 0 1px 0;
+
+    
+}
+.activites h2{
+    width: 960px;
+}
+.activites h3{padding: 0 0 0 20px;}
+
+.activites img{height: 310px;}
+/*#art2 img{
+    height: 140px;
+}
+#art3 img{
+    height: 100px;
+}
+#art5 img{
+    height: 115px;
+}
+#art6 img{
+    height: 122px;
+}
+
+ */
+
 /* --------------------------------------------------------------- */
 
 /* Footer */
 footer {
+
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2 ;
@@ -169,13 +243,10 @@ footer section h3{
     
  /* Footer */
  footer {
-    
-    
     flex-direction: row ;
     justify-content:center;
     flex-wrap: wrap;
     padding-left: 20px;
-    
 }
 footer section{padding-right: 10% ;}
 
@@ -186,12 +257,10 @@ footer section{padding-right: 10% ;}
    
  /* Footer */
  footer {
-    
     flex-direction: row ;
     justify-content:left;
     flex-wrap: wrap;
     padding-left: 40px;
- 
 }
 footer section{padding-right: 14% ;}
 
