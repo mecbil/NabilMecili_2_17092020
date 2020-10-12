@@ -12,17 +12,11 @@ p{padding-left: 1em;padding-bottom:3em; font-size: 1.3em;}
 i{font-size: 1.5em;}
 article{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}
 i{font-size: 1rem;color: #0065FC ;}
-.star{color: #F2F2F2 ;}
+.star{color: #F2F2F2}
 /* -------------------------------------------------------- */
 /* header */
 
-header ul{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* margin-top: -14px; */
-}
+header ul{display: flex;align-items: center;flex-wrap: wrap;justify-content: flex-start}
 header li{padding: 2em}
 header li:first-child {flex-grow: 1}
 .active{border-top :.3em solid #0065FC}
@@ -47,7 +41,24 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
         font-weight: 600;
         cursor: pointer;
 }
-#btn-2::after {content: "Recherche";color: white;}
+#btn-2::after {content: "Recherche";color: white}
+.dispo{padding-top: 0.4em}
+.dispo::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f129";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    color: #0065FC;
+    font-size: 1em;
+    border-radius: 50%;
+    padding: .6em 0.8em;
+    background-color: white;
+    border: .1em solid #F2F2F2;
+    margin-right: .4em;
+    
+}
+    
 
 /* FILTRE ------------------------------------------------------- */
 .boutons {display: flex;padding: 1em;width: 80%;flex-wrap: wrap}
@@ -58,7 +69,6 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
     padding: 1.5em;
     margin-right: 1em;
     color: #0065FC ;
-    /* margin-top: -.1em; */
     margin-left: -.3em;
 } 
 .boutons a {
@@ -78,25 +88,8 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
 .boutons a:hover{transform: rotate(360deg);}
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
-aside{
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: center;
-    background-color: #F2F2F2;
-    min-width: 28%;
-    /* padding: 0 1%; */
-    order: 3;
-    border-radius: 2em;
-    
-}
-aside article{
-    display: flex;
-    max-width: 22em;
-    height: 8.7em ;
-    margin: 2% auto;
-    
-    
-}
+aside{align-items: center;background-color: #F2F2F2;min-width: 28%;order: 3;border-radius: 2em}
+aside article{display: flex;max-width: 22em;height: 8.7em ;margin: 2% auto}
 aside h2{margin: 1em ;font-size: 1.8em;}
 aside h3{font-size: 1.1em;padding-top: 1em;}
 aside  h2::after{
@@ -105,7 +98,7 @@ aside  h2::after{
     display: inline-block;
     vertical-align: middle;
     font-weight: 900;
-    margin-left: 4.3em;
+    margin-left: 4.3em
 }
 aside article img{max-width:9em ;height:8em;padding: 0.3em;border-radius: 1em 0 0 1em}
 aside ul {margin-left: 1em;font-size: 1em;}
@@ -118,29 +111,28 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     flex-wrap: wrap; 
     background-color: #F2F2F2;
     width: 65%;
-    /* justify-content: flex-start; */
     order: 2;
-    padding-left: 1em;
     border-radius: 2em;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .hebergement h2{width: 100%;}
 
 .hebergement article{
         background-color: white;
-        width: 15em;
-        height: 10em;
+        width: 17em;
+        height: 14em;
         border-radius: 10%;
-        margin: 2em;
+        margin: 0.5em;
 }
 .hebcard img{
-    width: 14em;
-    height: 8em;
+    width: 98%;
+    height: 60%;
     border-radius: 10% 10% 0 0;
     padding: 1%;
 }
-
+.hebcard li{padding: 0.2em 1.5em;}
+.hebergement h4{width: 100%;padding: 2em ;}
 .activites{width: 100%;order: 4;}
 
     
