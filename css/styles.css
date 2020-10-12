@@ -79,35 +79,37 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
 aside{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
     background-color: #F2F2F2;
-    width: 25%;
-    padding: 0 1%;
+    min-width: 28%;
+    /* padding: 0 1%; */
     order: 3;
-    padding-top: 1%; 
     border-radius: 2em;
+    
 }
 aside article{
     display: flex;
-    max-width: 23em;
-    height: 8.6em ;
-    margin: 2%;
+    max-width: 22em;
+    height: 8.7em ;
+    margin: 2% auto;
+    
+    
 }
-aside h2{font-size: 2em;}
-
-
+aside h2{margin: 1em ;font-size: 1.8em;}
+aside h3{font-size: 1.1em;padding-top: 1em;}
 aside  h2::after{
     font-family: "Font Awesome 5 Free";
     content: "\f201";
     display: inline-block;
     vertical-align: middle;
     font-weight: 900;
-    margin-left: 3em;
+    margin-left: 4.3em;
 }
 aside article img{max-width:9em ;height:8em;padding: 0.3em;border-radius: 1em 0 0 1em}
-aside ul li{margin-left: 1em;font-size: 1em;}
+aside ul {margin-left: 1em;font-size: 1em;}
+aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 
 /* ------------------------------------------------------- */
 
@@ -115,7 +117,7 @@ aside ul li{margin-left: 1em;font-size: 1em;}
     display: flex;
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    width: 70%;
+    width: 65%;
     /* justify-content: flex-start; */
     order: 2;
     padding-left: 1em;
@@ -162,27 +164,15 @@ header ul{
 
 
 @media screen and (min-width: 375px)and (max-width: 480px){
-    
-     header li:first-child {
-        margin-right: 35%;
-     }
-     
+    /* header */
+    header li:first-child {margin-right: 35%}     
     header li:first-child{order: -2;}
     header li:last-child{order: -1;}
-    header li:nth-child(2){
-        
-        padding: 2em 5.1em;
-        margin-right: .4em;
-        border-bottom: .3em solid #0065FC;
-    }
-    header li:nth-child(3){
-        
-        padding: 2em 6.1em;
-        margin-right: .4em;
-        border-bottom: .3em solid #F2F2F2;  
-    }
-   
+    header li:nth-child(2){padding: 2em 5.1em;margin-right: .4em;border-bottom: .3em solid #0065FC}
+    header li:nth-child(3){padding: 2em 6.1em;margin-right: .4em;border-bottom: .3em solid #F2F2F2}
     .active{ border-top: 0;}
+    /* ------------------------------------------------------------------------------------------------ */
+
     /* main */
     /* form */
     #btn-2::after {
@@ -191,7 +181,7 @@ header ul{
         display: inline-block;
         vertical-align: middle;
         font-weight: 900;
-        color: white;}
+        color: white}
    
     #btn-2{
         margin-left: -1em;
@@ -202,11 +192,19 @@ header ul{
         background-color: #0065FC ;
     }
     /* ------------------------------------------------------- */
+/* populaire */
+aside {order:2;border-radius: 0;
+    width: 100%;
+}
+aside  h2::after{margin-left: 6.8em;}
+/* hebergement */
+.hebergement{order: 3;width: 100%;background-color: white;}
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
     header ul{
         justify-content: space-around;
     }
+    header li:first-child {flex-grow: 0}
 }
 
