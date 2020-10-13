@@ -26,7 +26,7 @@ header li:last-child a{color:  #0065FC;font-weight: bold;}
 
 /* --------------------------------------------------------------- */
 /* MAIN ---------------------------------------------------------- */
-main{width: 96%;display: flex;flex-wrap: wrap;justify-content: center;}
+main{width: 96%;display: flex;flex-wrap: wrap;justify-content: center;margin: auto;}
 main img {width: 100%;}
 /* FORM  --------------------------------------------------------- */
 form{width: 96%;order:1}
@@ -58,8 +58,6 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
     border: .1em solid #F2F2F2;
     margin-right: .4em;
 }
-    
-
 /* FILTRE ------------------------------------------------------- */
 .boutons {display: flex;padding: 1em;width: 80%;flex-wrap: wrap}
 .boutons h2{width: 100%;padding-bottom: 2em;}
@@ -88,7 +86,7 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
 .boutons a:hover{transform: rotate(360deg);}
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
-aside{align-items: center;background-color: #F2F2F2;min-width: 29%;order: 3;border-radius: 2em}
+aside{align-items: center;background-color: #F2F2F2;min-width: 28%;order: 3;border-radius: 2em}
 aside article{display: flex;max-width: 22em;height: 8.7em ;margin: 2% auto}
 aside h2{margin: 1em ;font-size: 1.8em;}
 aside h3{font-size: 1.1em;padding-top: 1em;}
@@ -105,19 +103,16 @@ aside ul {margin-left: 1em;font-size: 1em;}
 aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 
 /* ------------------------------------------------------- */
-
 .hebergement {
     display: flex;
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    width: 62%;
+    width: 65%;
     order: 2;
     border-radius: 2em;
     justify-content: center; 
 }
-
 .hebergement h2{width: 100%;}
-
 .hebergement article{
         background-color: white;
         width: 17em;
@@ -143,7 +138,7 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     background-color: #F2F2F2; 
     order: 4;
     border-radius: 2em;
-    margin-left: 2%;
+    /* margin-left: 2%; */
     justify-content: center;
 }
 .activites article{
