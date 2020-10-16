@@ -2,16 +2,39 @@
  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  /* ---------------------------------------------------------------- */
  /* General */
-*{margin: 0;padding: 0}
-html{font-family: 'Raleway', sans-serif;font-size: 62.5%}
+*{
+    margin: 0;
+    padding: 0
+}
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 62.5%
+}
 span{font-weight: 600}
-a{margin:0;text-decoration: none;color: black;font-size: 1.3rem;display: block;}
+/* a{
+    margin:0;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    display: block;} */
 ul{list-style: none;}
-h1{font-size: 1.8rem;padding: 1em 0 1em 1em;}
-p{padding-left: 1em;padding-bottom:3em; font-size: 1.3em;}
-/* article{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}  */
-figure{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}
-i{font-size: 1rem;color: #0065FC ;}
+h1{
+    font-size: 1.8rem;
+    padding: 1em 0 1em 1em;
+}
+p{
+    padding-left: 1em;
+    padding-bottom:3em;
+    font-size: 1.3em;
+}
+figure{
+    background-color: white;
+    border-radius: 1em;
+    margin-left: 0;
+    box-shadow: 0.1em 0.2em 0.8em #F2F2F2}
+i{
+    font-size: 1rem;
+    color: #0065FC ;}
 .star{color: #F2F2F2}
 /* -------------------------------------------------------- */
 /* header */
@@ -36,12 +59,32 @@ i{font-size: 1rem;color: #0065FC ;}
 
 /* --------------------------------------------------------------- */
 /* MAIN ---------------------------------------------------------- */
-main{width: 96%;display: flex;flex-wrap: wrap;justify-content: center;margin: auto;background-color: lightcoral;}
+main{
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background-color: lightcoral;}
 main img {width: 100%;}
 /* Recherche  --------------------------------------------------------- */
-.recherche{width: 96%;order:1}
-#btn-1{margin-left: 1em;width: 3em;height: 3em;border-radius: 1em 0 0 1em;border: 0}
-input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;font-weight: 600;cursor: text}
+.recherche{
+    width: 96%;
+    order:1}
+#btn-1{
+    margin-left: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 1em 0 0 1em;
+    border: 0
+}
+input{
+    margin-left: -.3em;
+    padding: 0 .6em;
+    height: 3em;
+    border: .2em solid #F2F2F2;
+    font-weight: 600;
+    cursor: text}
 #btn-2{
         margin-left: -.4em;
         width: 9em;
@@ -52,7 +95,9 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
         font-weight: 600;
         cursor: pointer;
 }
-#btn-2::after {content: "Recherche";color: white}
+#btn-2::after {
+    content: "Recherche";
+    color: white}
 .dispo{padding-top: 0.4em}
 .dispo::before{
     font-family: "Font Awesome 5 Free";
@@ -69,8 +114,16 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
     margin-right: .4em;
 }
 /* FILTRE ------------------------------------------------------- */
-.boutons {display: flex;padding: 1em;width: 85%;flex-wrap: wrap}
-.boutons h2{width: 100%;padding-bottom: 2em;}
+.boutons {
+    display: flex;
+    padding: 1em;
+    width: 85%;
+    flex-wrap: wrap
+}
+.boutons h2{
+    width: 100%;
+    padding-bottom: 2em
+}
 .boutons i{ 
     background-color: #DEEBFF;
     border-radius: 50% ;
@@ -97,10 +150,26 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
 .boutons a:hover{transform: rotate(360deg);}
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
-aside{align-items: center;background-color: #F2F2F2;width: 28%;order: 3;border-radius: 2em}
-aside figure{display: flex;max-width: 22em;height: 8.7em ;margin: 2% auto}
-aside h2{margin: 1em ;font-size: 1.8em;}
-aside h3{font-size: 1.1em;padding-top: 1em;}
+aside{
+    align-items: center;
+    background-color: #F2F2F2;
+    width: 28%;order: 3;
+    border-radius: 2em
+}
+aside figure{
+    display: flex;
+    max-width: 22em;
+    height: 8.7em ;
+    margin: 2% auto
+}
+aside h2{
+    margin: 1em ;
+    font-size: 1.8em;
+}
+aside h3{
+    font-size: 1.1em;
+    padding-top: 1em;
+}
 aside  h2::after{
     font-family: "Font Awesome 5 Free";
     content: "\f201";
@@ -109,8 +178,16 @@ aside  h2::after{
     font-weight: 900;
     margin-left: 4.3em
 }
-aside figure img{max-width:9em ;height:8em;padding: 0.3em;border-radius: 1em 0 0 1em}
-aside ul {margin-left: 1em;font-size: 1em;}
+aside figure img{
+    max-width:9em ;
+    height:8em;
+    padding: 0.3em;
+    border-radius: 1em 0 0 1em
+}
+aside ul {
+    margin-left: 1em;
+    font-size: 1em;
+}
 aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 
 /* ------------------------------------------------------- */
@@ -125,7 +202,11 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     margin-right: 2%;
     background-color: lawngreen;
 }
-.hebergement h2{width: 100%;margin: 1.5em;font-size: 1.8em;}
+.hebergement h2{
+    width: 100%;
+    margin: 1.5em;
+    font-size: 1.8em
+}
 .hebergement h3{font-size: 1em;}
 .hebergement figure{
     background-color: white;
@@ -135,7 +216,6 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     margin: .6em;
     padding: 0.1em;
 }
-
 .hebcard img{
     width: 96%;
     height: 10rem;
@@ -143,7 +223,10 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     padding: 2%;
 }
 .hebcard li{padding: 0.2em 1em;} 
-.hebergement h4{width: 100%;padding: 2em ;}
+.hebergement h4{
+    width: 100%;
+    padding: 2em 
+}
 
 /* --------------------------------------------------------------- */
 /* activités */
@@ -199,14 +282,20 @@ footer {
 }
 }
 
-
 @media screen and (min-width: 375px)and (max-width: 480px){
     /* header */
     .header li:first-child {margin-right: 35%}     
     .header li:first-child{order: -2;}
     .header li:last-child{order: -1;}
-    .header li:nth-child(2){padding: 2em 5.1em;margin-right: .4em;border-bottom: .3em solid #0065FC}
-    .header li:nth-child(3){padding: 2em 6.1em;margin-right: .4em;border-bottom: .3em solid #F2F2F2}
+    .header li:nth-child(2){
+        padding: 2em 5.1em;
+        margin-right: .4em;
+        border-bottom: .3em solid #0065FC
+    }
+    .header li:nth-child(3){
+        padding: 2em 6.1em;
+        margin-right: .4em;
+        border-bottom: .3em solid #F2F2F2}
     .active{ border-top: 0;}
     /* ------------------------------------------------------------------------------------------------ */
 
@@ -235,7 +324,10 @@ aside {order:2;border-radius: 0;
 }
 aside  h2::after{margin-left: 6.8em;}
 /* hebergement */
-.hebergement{order: 3;width: 100%;background-color: white;}
+.hebergement{
+    order: 3;
+    width: 100%;
+    background-color: white;}
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
