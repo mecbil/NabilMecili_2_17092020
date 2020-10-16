@@ -11,12 +11,12 @@ html{
     font-size: 62.5%
 }
 span{font-weight: 600}
-/* a{
+a{
     margin:0;
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
-    display: block;} */
+    display: block;} 
 ul{list-style: none;}
 h1{
     font-size: 1.8rem;
@@ -153,18 +153,19 @@ input{
 aside{
     align-items: center;
     background-color: #F2F2F2;
-    width: 28%;order: 3;
+    width: 33%;order: 3;
     border-radius: 2em
 }
 aside figure{
     display: flex;
-    max-width: 22em;
-    height: 8.7em ;
+    width: 82%;
+    height: 9.2em ;
     margin: 2% auto
 }
 aside h2{
-    margin: 1em ;
+    margin: 1em 0 ;
     font-size: 1.8em;
+    text-align: center;
 }
 aside h3{
     font-size: 1.1em;
@@ -176,10 +177,11 @@ aside  h2::after{
     display: inline-block;
     vertical-align: middle;
     font-weight: 900;
-    margin-left: 4.3em
+    margin-left: 28% 
+    
 }
 aside figure img{
-    max-width:9em ;
+    max-width:40%;
     height:8em;
     padding: 0.3em;
     border-radius: 1em 0 0 1em
@@ -195,7 +197,7 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     display: flex;
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    width: 70%;
+    width: 65%;
     order: 2;
     border-radius: 2em;
     justify-content: center; 
