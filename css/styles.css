@@ -9,27 +9,37 @@ a{margin:0;text-decoration: none;color: black;font-size: 1.3rem;display: block;}
 ul{list-style: none;}
 h1{font-size: 1.8rem;padding: 1em 0 1em 1em;}
 p{padding-left: 1em;padding-bottom:3em; font-size: 1.3em;}
-i{font-size: 1.5em;}
-article{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}
+/* article{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}  */
+figure{background-color: white;border-radius: 1em;margin-left: 0;box-shadow: 0.1em 0.2em 0.8em #F2F2F2}
 i{font-size: 1rem;color: #0065FC ;}
 .star{color: #F2F2F2}
 /* -------------------------------------------------------- */
 /* header */
-header{with :96%}
-.menu {width: 100%;margin: auto;}
-header ul{display: flex;align-items: center;flex-wrap: wrap;justify-content: flex-start}
-header li{padding: 2em}
-header li:first-child {flex-grow: 1}
-.active{border-top :.3em solid #0065FC}
-.active a{color:  #0065FC;font-weight: 500;}
-header li:last-child a{color:  #0065FC;font-weight: bold;}
+.menu {
+    width: 100%;
+    margin: auto
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+.header li{padding: 2em}
+.header li:first-child {flex-grow: 1}
+.active{
+    border-top :.3em solid #0065FC
+}
+.active a{color:  #0065FC;
+    font-weight: 500;}
+.header li:last-child a{color:  #0065FC;font-weight: bold;}
 
 /* --------------------------------------------------------------- */
 /* MAIN ---------------------------------------------------------- */
-main{width: 96%;display: flex;flex-wrap: wrap;justify-content: center;margin: auto;}
+main{width: 96%;display: flex;flex-wrap: wrap;justify-content: center;margin: auto;background-color: lightcoral;}
 main img {width: 100%;}
-/* FORM  --------------------------------------------------------- */
-form{width: 96%;order:1}
+/* Recherche  --------------------------------------------------------- */
+.recherche{width: 96%;order:1}
 #btn-1{margin-left: 1em;width: 3em;height: 3em;border-radius: 1em 0 0 1em;border: 0}
 input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;font-weight: 600;cursor: text}
 #btn-2{
@@ -59,15 +69,16 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
     margin-right: .4em;
 }
 /* FILTRE ------------------------------------------------------- */
-.boutons {display: flex;padding: 1em;width: 80%;flex-wrap: wrap}
+.boutons {display: flex;padding: 1em;width: 85%;flex-wrap: wrap}
 .boutons h2{width: 100%;padding-bottom: 2em;}
 .boutons i{ 
     background-color: #DEEBFF;
     border-radius: 50% ;
-    padding: 1.5em;
+    padding: 1.7em;
     margin-right: 1em;
     color: #0065FC ;
     margin-left: -.3em;
+    margin-top: -.2em ;
 } 
 .boutons a {
     background-color: white; 
@@ -86,8 +97,8 @@ input{margin-left: -.3em;padding: 0 .6em;height: 3em;border: .2em solid #F2F2F2;
 .boutons a:hover{transform: rotate(360deg);}
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
-aside{align-items: center;background-color: #F2F2F2;min-width: 28%;order: 3;border-radius: 2em}
-aside article{display: flex;max-width: 22em;height: 8.7em ;margin: 2% auto}
+aside{align-items: center;background-color: #F2F2F2;width: 28%;order: 3;border-radius: 2em}
+aside figure{display: flex;max-width: 22em;height: 8.7em ;margin: 2% auto}
 aside h2{margin: 1em ;font-size: 1.8em;}
 aside h3{font-size: 1.1em;padding-top: 1em;}
 aside  h2::after{
@@ -98,7 +109,7 @@ aside  h2::after{
     font-weight: 900;
     margin-left: 4.3em
 }
-aside article img{max-width:9em ;height:8em;padding: 0.3em;border-radius: 1em 0 0 1em}
+aside figure img{max-width:9em ;height:8em;padding: 0.3em;border-radius: 1em 0 0 1em}
 aside ul {margin-left: 1em;font-size: 1em;}
 aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 
@@ -107,26 +118,31 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     display: flex;
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    width: 65%;
+    width: 70%;
     order: 2;
     border-radius: 2em;
     justify-content: center; 
+    margin-right: 2%;
+    background-color: lawngreen;
 }
-.hebergement h2{width: 100%;}
-.hebergement article{
-        background-color: white;
-        width: 17em;
-        height: 14em;
-        border-radius: 10%;
-        margin: 0.5em;
+.hebergement h2{width: 100%;margin: 1.5em;font-size: 1.8em;}
+.hebergement h3{font-size: 1em;}
+.hebergement figure{
+    background-color: white;
+    width: 30%;
+    height: 17em;
+    border-radius: 1em;
+    margin: .6em;
+    padding: 0.1em;
 }
+
 .hebcard img{
-    width: 98%;
-    height: 60%;
-    border-radius: 10% 10% 0 0;
-    padding: 1%;
+    width: 96%;
+    height: 10rem;
+    border-radius: 1em 1em 0 0;
+    padding: 2%;
 }
-.hebcard li{padding: 0.2em 1.5em;}
+.hebcard li{padding: 0.2em 1em;} 
 .hebergement h4{width: 100%;padding: 2em ;}
 
 /* --------------------------------------------------------------- */
@@ -141,32 +157,35 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     /* margin-left: 2%; */
     justify-content: center;
 }
-.activites article{
+.activites figure a{margin: 0;padding: 0;}
+.activites 
+.activites figure {
     background-color: white;
-    width: 19.5em;
-    border-radius: 1em;
+    width: 24rem;
+    border-radius: 1rem;
     margin: 1em;
+    padding: 0;
+    height: 32rem;
 }
-#art1,#art4{height: 28em;}
+/*#art1,#art4{height:32em;}
 #art2{height: 14em;}
-#art2 img{height: 78%;} 
+#art2 img{height: ;} 
 #art3{height: 11em;margin-top: 3em;}
-#art3 img{height: 75%;} 
-#art5{height: 12em}
+#art3 img{height: 3;} 
+/*#art5{height: 12em}
 #art5 img{height: 75%;} 
 #art6{height: 14em;margin-top: 3em;}
-#art6 img{height: 75%;} 
-.activites h3{margin-left: 1em;}
-.activites img{
-    width: 100%;
-    height: 90%;
-    border-radius: 1em 1em 0 0;
-    margin-bottom: .5em;
-}
+#art6 img{height: 75%;}  */
 
 .activites h2{width: 100%;}
 
-
+.activites img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 75%; */
+    border-radius: 1rem 1rem 0 0;
+} 
 /* --------------------------------------------------------------- */
 footer {
     background-color: chartreuse;
@@ -175,7 +194,7 @@ footer {
     justify-content: space-between;
 }
 @media screen and (max-width: 375px){
-header ul{
+.header ul{
     flex-direction: column;
 }
 }
@@ -183,11 +202,11 @@ header ul{
 
 @media screen and (min-width: 375px)and (max-width: 480px){
     /* header */
-    header li:first-child {margin-right: 35%}     
-    header li:first-child{order: -2;}
-    header li:last-child{order: -1;}
-    header li:nth-child(2){padding: 2em 5.1em;margin-right: .4em;border-bottom: .3em solid #0065FC}
-    header li:nth-child(3){padding: 2em 6.1em;margin-right: .4em;border-bottom: .3em solid #F2F2F2}
+    .header li:first-child {margin-right: 35%}     
+    .header li:first-child{order: -2;}
+    .header li:last-child{order: -1;}
+    .header li:nth-child(2){padding: 2em 5.1em;margin-right: .4em;border-bottom: .3em solid #0065FC}
+    .header li:nth-child(3){padding: 2em 6.1em;margin-right: .4em;border-bottom: .3em solid #F2F2F2}
     .active{ border-top: 0;}
     /* ------------------------------------------------------------------------------------------------ */
 
@@ -220,9 +239,9 @@ aside  h2::after{margin-left: 6.8em;}
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
-    header ul{
+    .header ul{
         justify-content: space-around;
     }
-    header li:first-child {flex-grow: 0}
+    .header li:first-child {flex-grow: 0}
 }
 
