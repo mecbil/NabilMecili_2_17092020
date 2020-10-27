@@ -241,54 +241,87 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 
 /* --------------------------------------------------------------- */
 /* activités */
-.activites article{
-    width: 22%;
-    height: 34em;
-    margin: 0;
-    padding-right: 3em;}
 
 .activites {
     display: flex;
     flex-wrap: wrap; 
-    /* background-color: #F2F2F2;  */
     order: 4;
-    /* border-radius: 2em; */
-    /* margin-left: 2%; */
-    justify-content: center;
-    margin-bottom: 4em;
+    justify-content: space-between;
+    margin-bottom: 4em;   
+    width: 98%;
 }
+
 .activites article {
     background-color: white;
-    width: 20%;
+    width: 22.5%;
     border-radius: 1rem;
-    margin: 1em 4em 1em 0;
+    margin: 1em 0 3em 0;
     padding: 0;
     height: 34em;
+    background-color: black; 
 }
 
-.activites img{width: 100%;object-fit: cover;}
-#art1{margin-left: 1em;}
-#art2{width : 100%;height: 19em;margin: 0;}
-#art2 img{height:12em ;}  
-#art3{width : 100%;height: 14em;margin: 1em 0 0 0;} 
-#art3 img{height: 8em;} 
-#art5{width : 100%;height: 19em;margin: 1em 0;}
-#art5 img{height: 12em;} 
-#art6{width : 100%;height: 14em;margin: 1em 0 0 0;}
-#art6 img{height: 8em;} 
+.activites a{
+    height: 100%;
+    border-radius: 1rem;
+    background-color: white;
+}
 
+#art1, {
+    
+    order :1
+}
+#art2 {
+    height: 17em;
+    order: 2;
+}
+#art2 img{
+    height:10em
+}  
+#art3 {
+    height: 14em;
+    order: 5;
+    margin-top: -17em;  
+    margin-left: 25.8%;
+} 
+#art3 img{
+    height: 8em;
+} 
+#art4{
+    order: 3;
+}
+#art5{
+    height: 14em;
+    order: 4;
+    
+}
+#art5 img{
+    height: 8em
+} 
+#art6{
+    height: 17em;
+    order : 6;
+    margin-top: -20em;
+}
+#art6 img{
+    height: 10em;   
+} 
+.activites h3{
+    font-size: 1em;
+}
 .activites h2{
     width: 100%;
-    margin: 1.5em;
+    margin: 1.5em 0;
     font-size: 1.8em
 }
-.activites h3{margin: 0.4em 0 0 0.8em;}
+.activites h3{margin: 0.7em 0 0 1em;}
 .activites img{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 23em; 
     border-radius: 1rem 1rem 0 0;
+    object-fit: cover
 } 
 /* --------------------------------------------------------------- */
 footer {
@@ -511,7 +544,27 @@ aside  h2::after{
     width: 99%;
     margin: auto;
 }
+/* activités */
 
+.activites{
+    flex-direction: column;
+    align-items: center;
+}
+.activites article{
+    width: 70%;
+    
+}
+
+#art1,#art4{
+    margin: 0 0 3em 0;
+
+}
+#art1, #art2, #art3, #art4, #art5, #art6{
+    height: 25em;
+}
+#art1 img, #art2 img, #art3 img, #art4 img, #art5 img, #art6 img{
+    height: 16em;
+}
 }
 
 
