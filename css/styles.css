@@ -494,6 +494,31 @@ aside  h2::after{
 }
 footer {flex-direction: column;}
 /* ------------------------------------------------------------ */
+/* activités */
+
+.activites{
+    flex-direction: column;
+    align-items: center;
+}
+.activites article{
+    width: 70%;
+    
+}
+
+#art1,#art4{
+    margin: 0 0 3em 0;
+
+}
+#art1, #art2, #art3, #art4, #art5, #art6{
+    height: 25em;
+}
+#art1 img, #art2 img, #art3 img, #art4 img, #art5 img, #art6 img{
+    height: 16em;
+}
+#art3, #art6{
+    margin-top: 0;
+    margin-left: 0;
+}
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
@@ -564,6 +589,10 @@ aside  h2::after{
 }
 #art1 img, #art2 img, #art3 img, #art4 img, #art5 img, #art6 img{
     height: 16em;
+}
+#art3, #art6{
+    margin-top: 0;
+    margin-left: 0;
 }
 }
 
