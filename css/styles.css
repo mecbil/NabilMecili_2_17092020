@@ -242,16 +242,16 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 /* --------------------------------------------------------------- */
 /* activités */
 
-.activites {
+#activites {
     display: flex;
     flex-wrap: wrap; 
     order: 4;
     justify-content: space-between;
     margin-bottom: 4em;   
-    width: 98%;
+    width: 96%;
 }
 
-.activites article {
+#activites article {
     background-color: white;
     width: 22.5%;
     border-radius: 1rem;
@@ -261,61 +261,59 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     background-color: black; 
 }
 
-.activites a{
+ article a{
     height: 100%;
     border-radius: 1rem;
     background-color: white;
 }
 
-#art1, {
-    
-    order :1
+.Activ_View-port{
+    order :1;
 }
-#art2 {
+#activites .Activ_Fort-de-Pomegues {
     height: 17em;
     order: 2;
 }
-#art2 img{
-    height:10em
+#activites .Activ_Fort-de-Pomegues img{
+    height:10em;
 }  
-#art3 {
+#activites .Activ_Iles-du-Frioul {
     height: 14em;
     order: 5;
     margin-top: -17em;  
     margin-left: 25.8%;
 } 
-#art3 img{
+#activites .Activ_Iles-du-Frioul img{
     height: 8em;
 } 
-#art4{
+#activites .Activ_Parc-National-des-Calanques{
     order: 3;
 }
-#art5{
+#activites .Activ_Notre-Dame-de-la-Garde{
     height: 14em;
     order: 4;
-    
 }
-#art5 img{
+#activites .Activ_Notre-Dame-de-la-Garde img{
     height: 8em
 } 
-#art6{
+#activites .Activ_Parc-Longchamps{
     height: 17em;
     order : 6;
     margin-top: -20em;
 }
-#art6 img{
+#activites .Activ_Parc-Longchamps img{
     height: 10em;   
 } 
-.activites h3{
+#activites h3{
     font-size: 1em;
 }
-.activites h2{
+#activites h2{
     width: 100%;
     margin: 1.5em 0;
     font-size: 1.8em
 }
-.activites h3{margin: 0.7em 0 0 1em;}
-.activites img{
+#activites h3{margin: 0.7em 0 0 1em;}
+#activites img{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -327,11 +325,11 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 footer {
     margin-top: 10em;
     background-color: #F2F2F2;
-    padding: 0 0 2.5em 2.5em; 
+    padding: 0 0 2.5em 2.6em; 
     display: flex;
     justify-content: flex-start;
 }
-footer section {margin-right: 15%;}
+footer section {margin-right: 17%;}
 footer section h3{margin: 1.6em 0;font-size: 1.5em;}
 footer section a{margin-bottom: 0.5em}
 @media screen and (max-width: 375px){
@@ -398,6 +396,44 @@ aside  h2::after{
     margin-left: 5em;
 }
 /* ----------------------------------------------------------- */
+/* activités */
+
+#activites{
+    flex-direction: column;
+    align-items: center;
+}
+#activites article{
+    width: 70%;
+    height: 25em;
+}
+#activites .Activ_View-port,
+#activites .Activ_Fort-de-Pomegues, 
+#activites .Activ_Iles-du-Frioul, 
+#activites .Activ_Parc-National-des-Calanques,
+#activites .Activ_Notre-Dame-de-la-Garde,
+#activites .Activ_Parc-Longchamps{
+    height: 25em;
+}
+#activites article img{
+    height: 16em;
+}
+#activites .Activ_View-port img,
+#activites .Activ_Fort-de-Pomegues img,
+#activites .Activ_Iles-du-Frioul img,
+#activites .Activ_Parc-National-des-Calanques img,
+#activites .Activ_Notre-Dame-de-la-Garde img,
+#activites .Activ_Parc-Longchamps img{
+    height: 16em;
+}
+#activites .Activ_Iles-du-Frioul, #activites .Activ_Parc-Longchamps{
+    margin-top: 0;
+    margin-left: 0;
+}
+footer {
+    flex-direction: column;
+    padding-left: 5em;
+}
+
 }
 
 @media screen and (min-width: 375px)and (max-width: 481px){
@@ -492,33 +528,52 @@ aside  h2::after{
     height: 18em; 
      margin: 1em
 }
-footer {flex-direction: column;}
+footer {
+    flex-direction: column;
+    padding-left: 6em;
+}
 /* ------------------------------------------------------------ */
 /* activités */
 
-.activites{
+#activites{
     flex-direction: column;
     align-items: center;
 }
-.activites article{
-    width: 70%;
-    
-}
-
-#art1,#art4{
-    margin: 0 0 3em 0;
-
-}
-#art1, #art2, #art3, #art4, #art5, #art6{
-    height: 25em;
-}
-#art1 img, #art2 img, #art3 img, #art4 img, #art5 img, #art6 img{
+#activites article{
+    width: 74%;
     height: 16em;
 }
-#art3, #art6{
+#activites .Activ_Iles-du-Frioul{
+    order: 3;
+}
+#activites .Activ_Parc-National-des-Calanques{
+    order : 4
+}
+
+#activites .Activ_View-port,
+#activites .Activ_Fort-de-Pomegues, 
+#activites .Activ_Iles-du-Frioul, 
+#activites .Activ_Parc-National-des-Calanques,
+#activites .Activ_Notre-Dame-de-la-Garde,
+#activites .Activ_Parc-Longchamps{
+    height: 16em;
+}
+#activites article img{
+    height: 9em;
+}
+#activites .Activ_View-port img,
+#activites .Activ_Fort-de-Pomegues img,
+#activites .Activ_Iles-du-Frioul img,
+#activites .Activ_Parc-National-des-Calanques img,
+#activites .Activ_Notre-Dame-de-la-Garde img,
+#activites .Activ_Parc-Longchamps img{
+    height: 9em;
+}
+#activites .Activ_Iles-du-Frioul, #activites .Activ_Parc-Longchamps{
     margin-top: 0;
     margin-left: 0;
 }
+
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
@@ -571,28 +626,49 @@ aside  h2::after{
 }
 /* activités */
 
-.activites{
+#activites{
     flex-direction: column;
     align-items: center;
 }
-.activites article{
+#activites article{
     width: 70%;
-    
-}
-
-#art1,#art4{
-    margin: 0 0 3em 0;
-
-}
-#art1, #art2, #art3, #art4, #art5, #art6{
     height: 25em;
 }
-#art1 img, #art2 img, #art3 img, #art4 img, #art5 img, #art6 img{
+#activites .Activ_Iles-du-Frioul{order: 3;}
+#activites .Activ_Parc-National-des-Calanques{order : 4}
+#activites .Activ_View-port,
+#activites .Activ_Fort-de-Pomegues, 
+#activites .Activ_Iles-du-Frioul, 
+#activites .Activ_Parc-National-des-Calanques,
+#activites .Activ_Notre-Dame-de-la-Garde,
+#activites .Activ_Parc-Longchamps{
+    height: 25em;
+}
+#activites article img{
     height: 16em;
 }
-#art3, #art6{
+#activites .Activ_View-port img,
+#activites .Activ_Fort-de-Pomegues img,
+#activites .Activ_Iles-du-Frioul img,
+#activites .Activ_Parc-National-des-Calanques img,
+#activites .Activ_Notre-Dame-de-la-Garde img,
+#activites .Activ_Parc-Longchamps img{
+    height: 16em;
+}
+
+
+#activites .Activ_Iles-du-Frioul, #activites .Activ_Parc-Longchamps{
     margin-top: 0;
     margin-left: 0;
+}
+
+footer section {
+margin-right: 0;
+
+}
+footer{
+    justify-content: space-around;
+    padding-left: 2em;
 }
 }
 
