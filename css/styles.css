@@ -4,22 +4,29 @@
  /* General */
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 html{
     font-family: 'Raleway', sans-serif;
-    font-size: 62.5%
+    font-size: 62.5%;
 }
-.container{max-width:1170px;margin: auto}
-span{font-weight: 600}
+.container{
+    max-width:1170px;
+    margin: auto;
+}
+span{
+    font-weight: 600;
+}
 a{
     margin:0;
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
-    display: block
+    display: block;
 } 
-ul{list-style: none;}
+ul{
+    list-style: none;
+}
 h1{
     font-size: 2rem;
     padding: 0.5em 0;
@@ -38,7 +45,9 @@ i{
     font-size: 0.8em;
     color: #0065FC ;
 }
-.star{color: #F2F2F2}
+.star{
+    color: #F2F2F2;
+}
 /* -------------------------------------------------------- */
 /* header */
 
@@ -46,16 +55,26 @@ i{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
-.header li{padding: 2em}
-.header li:first-child {flex-grow: 1}
+.header li{
+    padding: 2em;
+    margin-left: 1em;
+}
+.header li:first-child {
+    flex-grow: 1;
+}
 .active{
-    border-top :.3em solid #0065FC
+    border-top :.3em solid #0065FC;
 }
-.active a{color:  #0065FC;
-    font-weight: 500;}
-.header li:last-child a{color:  #0065FC;font-weight: bold;}
+.active a{
+    color:  #0065FC;
+    font-weight: 500;
+}
+.header li:last-child a{
+    color:  #0065FC;
+    font-weight: bold;
+}
 
 /* --------------------------------------------------------------- */
 /* MAIN ---------------------------------------------------------- */
@@ -64,12 +83,14 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
-main img {width: 100%;}
+main img {
+    width: 100%;
+}
 /* Recherche  --------------------------------------------------------- */
 .recherche{
     width: 96%;
     order:1;
-    margin-left: 2em
+    margin-left: 2em;
 }
 #btn-1{
     width: 3em;
@@ -86,7 +107,8 @@ input{
     height: 3em;
     border: .2em solid #F2F2F2;
     font-weight: 600;
-    cursor: text}
+    cursor: text;
+}
 #btn-2{
         margin-left: -.4em;
         width: 9em;
@@ -99,7 +121,8 @@ input{
 }
 #btn-2::after {
     content: "Recherche";
-    color: white}
+    color: white;
+}
 .dispo{
     padding-top: 0.4em;
     margin-top: -1.7em;
@@ -113,17 +136,15 @@ input{
     padding: 0.2em 0.6em;
     margin: 0 0.6em;
     color: #0065FC ;
-    font-size: 1.2em;
-    
-    
+    font-size: 1.2em;    
 }
 /* FILTRE ------------------------------------------------------- */
 .boutons {
     display: flex;
     padding: 1em;
     margin-top: 1.5em;
-    width: 87%;
-    flex-wrap: wrap
+    width: 90%;
+    flex-wrap: wrap;
 }
 .boutons h2{
     margin: 0.8em 1em 0 0;
@@ -146,9 +167,11 @@ input{
     margin: 0 1em 1em 0;
     border: .2em solid #F2F2F2 ;
     font-weight: 700;
-    transition: width 2s, height 2s, transform 1s;;
+    transition: width 2s, height 2s, transform 1s;
 }
-.boutons a:hover{transform: rotate(360deg);}
+.boutons a:hover{
+    transform: rotate(360deg);
+}
 /* --------------------------------------------------------------- */
 /* populaire --------------------------------------------- */
 aside{
@@ -156,14 +179,14 @@ aside{
     background-color: #F2F2F2;
     width: 30%;
     order: 3;
-    border-radius: 2em
+    border-radius: 2em;
 }
 aside a{display: flex;width :100%;margin: 0;}
 aside article{
     display: flex;
     max-width: 81%;
     height: 11.4em ;
-    margin: 1.5em auto
+    margin: 1.5em auto;
 }
 aside h2{
     margin: 1.6em 0 ;
@@ -181,7 +204,7 @@ aside  h2::after{
     display: inline-block;
     vertical-align: middle;
     font-weight: 900;
-    margin-left: 23% 
+    margin-left: 23%;
     
 }
 aside article img{
@@ -196,12 +219,14 @@ aside ul {
     font-size: 1em;
     width: 55%;
 }
-aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
-
+aside ul li:nth-child(2){
+    padding: .5em 0 1.5em 0;
+}
 
 /* ------------------------------------------------------- */
-/* hebergement ------------------------------------------- */
-.hebergement {
+/* hebergements ------------------------------------------- */
+
+#hebergements {
     display: flex;
     flex-wrap: wrap; 
     background-color: #F2F2F2;
@@ -211,13 +236,15 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     justify-content: center; 
     margin-right: 2%;
 }
-.hebergement h2{
+#hebergements h2{
     width: 100%;
     margin: 1.5em;
-    font-size: 1.8em
+    font-size: 1.8em;
 }
-.hebergement h3{font-size: 0.9em;}
-.hebergement article{
+#hebergements h3{
+    font-size: 0.9em;
+}
+#hebergements article{
     background-color: white;
     width: 30%;
     height: 17em;
@@ -230,10 +257,11 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     height: 9rem;
     border-radius: 1em 1em 0 0;
     padding: 2%;
-    
 }
-.hebcard li{padding: 0.2em 1em;} 
-.hebergement h4{
+.hebcard li{
+    padding: 0.2em 1em;
+} 
+#hebergements h4{
     width: 100%;
     padding: 2em;
     font-size: 1.2em;
@@ -294,7 +322,7 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
     order: 4;
 }
 #activites .Activ_Notre-Dame-de-la-Garde img{
-    height: 8em
+    height: 8em;
 } 
 #activites .Activ_Parc-Longchamps{
     height: 17em;
@@ -310,16 +338,18 @@ aside ul li:nth-child(2){padding: .5em 0 1.5em 0}
 #activites h2{
     width: 100%;
     margin: 1.5em 0;
-    font-size: 1.8em
+    font-size: 1.8em;
 }
-#activites h3{margin: 0.7em 0 0 1em;}
+#activites h3{
+    margin: 0.7em 0 0 1em;
+}
 #activites img{
     margin: 0;
     padding: 0;
     width: 100%;
     height: 23em; 
     border-radius: 1rem 1rem 0 0;
-    object-fit: cover
+    object-fit: cover;
 } 
 /* --------------------------------------------------------------- */
 footer {
@@ -329,9 +359,16 @@ footer {
     display: flex;
     justify-content: flex-start;
 }
-footer section {margin-right: 17%;}
-footer section h3{margin: 1.6em 0;font-size: 1.5em;}
-footer section a{margin-bottom: 0.5em}
+footer section {
+    margin-right: 17%;
+}
+footer section h3{
+    margin: 1.6em 0;
+    font-size: 1.5em;
+}
+footer section a{
+    margin-bottom: 0.5em;
+}
 @media screen and (max-width: 375px){
 
 .header ul{
@@ -346,7 +383,7 @@ h1{
     display: inline-block;
     vertical-align: middle;
     font-weight: 900;
-    color: white
+    color: white;
 }
 #btn-2{
     margin-left: -1em;
@@ -358,24 +395,24 @@ h1{
 }
 .boutons h2{
     width: 100%;
-    padding-bottom: 1em
+    padding-bottom: 1em;
 }
-.hebergement{
+#hebergements{
     margin: 0;
     order: 3;
     width: 100%;
     background-color: white;
     justify-content: center;
-    border-radius: 0
+    border-radius: 0;
 }
 .hebcard img{
     object-fit: cover;
 }
 
-.hebergement article{
+#hebergements article{
     width: 70%;
     height: 18em; 
-     margin: 1em
+     margin: 1em;
 }
 /* populaire */
 aside {
@@ -387,7 +424,7 @@ aside article{
     
     max-width: 70%;
     height: 11em ;
-    margin: 10% auto
+    margin: 10% auto;
 }
 aside article img{
     height: 96%;
@@ -438,8 +475,11 @@ footer {
 
 @media screen and (min-width: 375px)and (max-width: 481px){
     /* header */
+    .header li{
+        margin-left: 0;
+    }
     .header li:first-child {
-        margin-right: 35%
+        margin-right: 35%;
     }     
     .header li:first-child{
         order: -2;
@@ -450,18 +490,17 @@ footer {
     .header li:nth-child(2){
         padding: 2em 5.1em;
         margin-right: .4em;
-        border-bottom: .3em solid #0065FC
+        border-bottom: .3em solid #0065FC;
     }
     .header li:nth-child(3){
         padding: 2em 6.1em;
         margin-right: .4em;
-        border-bottom: .3em solid #F2F2F2}
+        border-bottom: .3em solid #F2F2F2;
+    }
     .active{ 
         border-top: 0;
     }
 
-   
-    
     /* ------------------------------------------------------------------------------------------------ */
 
     /* main */
@@ -474,7 +513,8 @@ footer {
         display: inline-block;
         vertical-align: middle;
         font-weight: 900;
-        color: white}
+        color: white;
+    }
    
     #btn-2{
         margin-left: -1em;
@@ -488,7 +528,7 @@ footer {
     /* filtre */
     .boutons h2{
         width: 100%;
-        padding-bottom: 1em
+        padding-bottom: 1em;
     }
     /* ------------------------------------------------------- */
 /* populaire */
@@ -501,7 +541,7 @@ aside article{
     
     max-width: 70%;
     height: 11em ;
-    margin: 10% auto
+    margin: 10% auto;
 }
 aside article img{
     height: 92%;
@@ -510,23 +550,23 @@ aside  h2::after{
     margin-left: 5em;
 }
 /* ----------------------------------------------------------- */
-/* hebergement */
-.hebergement{
+/* hebergements */
+#hebergements{
     margin: 0;
     order: 3;
     width: 100%;
     background-color: white;
     justify-content: center;
-    border-radius: 0
+    border-radius: 0;
 }
 .hebcard img{
     object-fit: cover;
 }
 
-.hebergement article{
+#hebergements article{
     width: 70%;
     height: 18em; 
-     margin: 1em
+     margin: 1em;
 }
 footer {
     flex-direction: column;
@@ -547,7 +587,7 @@ footer {
     order: 3;
 }
 #activites .Activ_Parc-National-des-Calanques{
-    order : 4
+    order : 4;
 }
 
 #activites .Activ_View-port,
@@ -577,11 +617,14 @@ footer {
 }
 @media screen and (min-width: 481px) and (max-width: 900px){
     
+    .header li{
+        margin-left: 0;
+    }
     .header ul{
         justify-content: space-around;
     }
     .header li:first-child {
-        flex-grow: 0
+        flex-grow: 0;
     } 
 /* populaire */
 aside {
@@ -613,14 +656,17 @@ aside article img{
     border-radius: 1em 1em 0 0;
     padding: 2%;
 }
-aside h2{width: 100%;margin-left: 1.6em; text-align: left;}
+aside h2{
+    width: 100%;
+    margin-left: 1.6em;
+    text-align: left;
+}
 aside  h2::after{
     margin-left: 5%;
 }
 
-
-/* hebergement ------------------------------------------- */
-.hebergement { 
+/* hebergements ------------------------------------------- */
+#hebergements { 
     width: 99%;
     margin: auto;
 }
@@ -634,8 +680,12 @@ aside  h2::after{
     width: 70%;
     height: 25em;
 }
-#activites .Activ_Iles-du-Frioul{order: 3;}
-#activites .Activ_Parc-National-des-Calanques{order : 4}
+#activites .Activ_Iles-du-Frioul{
+    order: 3;
+}
+#activites .Activ_Parc-National-des-Calanques{
+    order : 4;
+}
 #activites .Activ_View-port,
 #activites .Activ_Fort-de-Pomegues, 
 #activites .Activ_Iles-du-Frioul, 
@@ -656,7 +706,6 @@ aside  h2::after{
     height: 16em;
 }
 
-
 #activites .Activ_Iles-du-Frioul, #activites .Activ_Parc-Longchamps{
     margin-top: 0;
     margin-left: 0;
@@ -671,5 +720,3 @@ footer{
     padding-left: 2em;
 }
 }
-
-
